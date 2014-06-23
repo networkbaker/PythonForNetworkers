@@ -4,7 +4,10 @@
 ######CCIE #6243
 ######Twitter: @kirkbyers
 ######https://pynet.twb-tech.com/
-
+######
+######Garry Baker @networkbaker 
+######Made addtions as needed want to thank Kirk Byers for base script
+######additions started 24JUNE2014
 
 import paramiko
 import time
@@ -26,9 +29,13 @@ if __name__ == '__main__':
 
 
     # VARIABLES THAT NEED CHANGED
-    ip = '192.168.100.6'
-    username = 'afadmin'
-    password = 'dirtybit'
+    #ip = '192.168.100.6'
+    #username = 'user'
+    #password = 'pass'
+    ##addedd 14JUNE2014 interactive input for ip,user,password
+    ip = input("Enter IP address:'1.1.1.1' ")
+    username = input("Enter username:'user' ")
+    password = input("Enter password:'pass' ")
 
     # Create instance of SSHClient object
     remote_conn_pre = paramiko.SSHClient()
