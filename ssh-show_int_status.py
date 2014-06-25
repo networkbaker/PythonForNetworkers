@@ -33,9 +33,10 @@ if __name__ == '__main__':
     #username = 'user'
     #password = 'pass'
     ##addedd 14JUNE2014 interactive input for ip,user,password
-    ip = input("Enter IP address:'1.1.1.1' ")
-    username = input("Enter username:'user' ")
-    password = input("Enter password:'pass' ")
+    ##--Changed input to raw_input so no more ''
+    ip = raw_input("Enter IP address:'1.1.1.1' ")
+    username = raw_input("Enter username:'user' ")
+    password = raw_input("Enter password:'pass' ")
 
     # Create instance of SSHClient object
     remote_conn_pre = paramiko.SSHClient()
