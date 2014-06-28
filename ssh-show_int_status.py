@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #####Original script taken from https://pynet.twb-tech.com/
 ######Written by:
 ######Kirk Byers
